@@ -27,7 +27,6 @@ body {
 
 nav {
     background-color: #EBE6E4;
-
 }
 
 nav ul {
@@ -55,7 +54,139 @@ nav li:hover {
     background-color: #bdb2af;
 }
 
+/* ROOMS */
 
+.headRooms {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/luminaire.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-rooms {
+    border-radius: 10rem;
+    width: 30%;
+    height: 30%;
+}
+
+.headRooms h2 {
+    margin: 0;
+    padding-top: 0.2rem;
+    color: #403737;
+    font-size: 16px;
+    font-family: "lustria";
+}
+
+.headRooms button {
+    margin-top: 2rem;
+    border: none;
+    background: none;
+    color: #DAB072;
+}
+
+.rooms .txtGold {
+    margin: 0;
+    color: #DAB072;
+    padding-right: 0.2rem;
+}
+
+.txtRooms {
+    display: flex;
+    background-color: #EBE6E4;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.txtRooms h3 {
+    font-size: 16px;
+    margin: 0;
+    font-family: "lustria";
+}
+
+.rooms .txt {
+    background-color: #EBE6E4;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Montserrat";
+    padding: 0 3rem;
+}
+
+.iconRooms {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EBE6E4;
+    padding: 1.2rem 0;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon p {
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+.roomsPages {
+    width: 100%;
+
+}
+
+.roomPictures img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.roomIndex {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.roomIndex h2 {
+    color: #DAB072;
+    font-family: "Lustria";
+    font-size: 16px;
+}
+
+.roomIndex p {
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+
+.roomIndex button {
+    background-color: #DAB072;
+    border: none;
+    color: #fdfdfd;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.breakfastOffer {
+    background-color: #EBE6E4;
+}
+
+.breakfast {
+    width: 100%;
+    height: 130px;
+}
+
+/* END ROOMS */
 
 /* MEDIA SCREEN > 600px */
 
