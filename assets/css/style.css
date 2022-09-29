@@ -7,8 +7,35 @@ body {
 
 
 /* GLOBAL */
+
+
 p {
     font-size: 20px;
+}
+
+h2 {
+    color: #DAB072;
+}
+
+button {
+    font-size: 15px;
+    font-family: Arial;
+    width: 140px;
+    height: 50px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: inset 0px 1px 0px 0px rgba(202, 202, 202, 0);
+    text-shadow: inset 0px 1px 0px rgba(253, 249, 249, 1);
+    background: linear-gradient(rgba(218, 176, 114, 1), rgba(144, 113, 69, 1));
+}
+
+button:hover {
+    background: linear-gradient(rgba(144, 113, 69, 1), rgba(218, 176, 114, 1));
 }
 
 /* HEADER */
@@ -81,11 +108,11 @@ nav li:hover {
 
 #homeHero h1 {
     color: #e0e4e4;
-    font-size: 3rem;
+    font-size: clamp(1rem 2vwgit 3rem);
 }
 
-#homeRestaurant {
-    border: 2px red solid;
+.homeRestaurant {
+
     margin: 0 10vw;
     padding: 5vw;
     display: flex;
@@ -95,14 +122,14 @@ nav li:hover {
 
 }
 
-#homeRestaurant img {
+.homeRestaurant img {
     width: 75%;
     height: fit-content;
     margin: 2rem;
 }
 
 #homePresentation {
-    border: 2px green solid;
+
     background-image: url('../images/bg-home.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -117,12 +144,25 @@ nav li:hover {
 
 #homePresentation p {
     padding: 4rem;
+    font-style: italic;
 }
 
-
-#undefind {
-    min-height: 1500px;
+.author {
+    display: block;
+    text-align: right;
+    font-weight: bold;
 }
+
+.homeWellness {
+
+    margin: 0 10vw;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 /* MEDIA SCREEN > 778px */
 
@@ -152,11 +192,11 @@ nav li:hover {
 
 
     /* HOME */
-    #homeRestaurant {
+    .homeRestaurant {
         flex-direction: row;
     }
 
-    #homeRestaurant img {
+    .homeRestaurant img {
         width: 30%;
     }
 
