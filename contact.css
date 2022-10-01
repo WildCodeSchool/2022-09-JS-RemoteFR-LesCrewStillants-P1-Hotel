@@ -1,16 +1,16 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "lustria",sans-serif;
+  font-family: "lustria";
 }
 .contact-section{
-  background: linear-gradient(135deg, #c8c0bc,rgb(96, 86, 70));
+  background: linear-gradient(130deg, #EBE6E4,rgb(118, 111, 100));
   background-size: cover;
   padding: 40px 0;
 }
 .contact-section h1{
   text-align: center;
-  color: #ddd;
+  color: #EBE6E4;
 }
 .border{
   width: 100px;
@@ -37,6 +37,10 @@
   outline: none;
   color: rgb(0, 0, 0);
   transition: 0.5s;
+  font-family: "montserrat";
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #aea192;
+
 }
 .formulaire-text:focus{
   box-shadow: 0 0 10px 4px #bab08b;
@@ -48,7 +52,7 @@ textarea.formulaire-text{
   float: right;
   border: 0;
   background: #bab08b;
-  color: #fff;
+  color: #EBE6E4;
   padding: 12px 50px;
   border-radius: 20px;
   cursor: pointer;
