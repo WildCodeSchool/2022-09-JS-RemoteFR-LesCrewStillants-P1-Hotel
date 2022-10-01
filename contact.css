@@ -14,7 +14,7 @@
 }
 .border{
   width: 100px;
-  height: 10px;
+  height: 6px;
   background: #bab08b;
   margin: 40px auto;
 }
@@ -57,6 +57,8 @@ textarea.formulaire-text{
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: #EBE6E4;
+  font-weight: bold;
 }
 .formulaire-btn:hover{
   background: #726546;
