@@ -8,6 +8,10 @@ body {
 
 /* GLOBAL */
 
+@font-face {
+    font-family: "lustria";
+    src: url("../fonts/lustria.ttf") format("ttf");
+}
 
 p {
     font-size: 20px;
@@ -80,7 +84,6 @@ nav li {
     padding: 0.5rem;
     border-top: 1px #fdfdfd solid;
     background-color: #d3cac7;
-    color: #403737;
     cursor: pointer;
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -91,8 +94,68 @@ nav li:hover {
     background-color: #bdb2af;
 }
 
+nav li a {
+    color: #403737;
+    display: block;
+    text-decoration: none;
+
+
+}
+
+.current-link {
+    color: red;
+}
 
 /* HOME */
+.home h2 {
+    color: #DAB072;
+}
+
+.content {
+    margin: 0 12vw;
+    /* border: 1px green solid; */
+}
+
+.homeImgShadow {
+    box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.52);
+    width: clamp(10rem, 30vw, 25rem);
+}
+
+.home {
+    /* border: 1px red solid; */
+    min-height: 200px;
+    padding: 10rem 0rem;
+
+}
+
+.home-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homePresentation-picto {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 50px auto;
+
+}
+
+.homePresentation-description {
+    background-color: #EBE6E4;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 3rem;
+    z-index: -1;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+/*############# LAST ############### */
+
 #homeHero {
     width: 100%;
     min-height: 830px;
@@ -108,7 +171,11 @@ nav li:hover {
 
 #homeHero h1 {
     color: #e0e4e4;
-    font-size: clamp(1rem 2vwgit 3rem);
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.imgHero {
+    width: 70vw;
 }
 
 .homeRestaurant {
@@ -155,14 +222,43 @@ nav li:hover {
 
 .homeWellness {
 
-    margin: 0 10vw;
-    padding: 5vw;
+    padding: 3vw 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: #f1f1f1;
 }
 
+.homeWellness div {
+    display: flex;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.homeWellness div article {
+    width: 100%;
+    margin: 6px;
+    flex-shrink: 0;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.homeWellness div article {
+    background-image: url('../images/home-weelness1.jpg');
+    background-size: cover;
+}
+
+.homeWellness div article h4 {
+    background-color: #00000061;
+    margin: 0;
+    width: -webkit-fill-available;
+    padding: 0.3rem;
+    color: #fff;
+}
 
 /* MEDIA SCREEN > 778px */
 
@@ -192,6 +288,18 @@ nav li:hover {
 
 
     /* HOME */
+
+    .home-presentation {
+        flex-direction: row;
+    }
+
+
+
+
+    .imgHero {
+        width: 30vw;
+    }
+
     .homeRestaurant {
         flex-direction: row;
     }
@@ -203,6 +311,11 @@ nav li:hover {
     #homePresentation p {
         padding: 4rem;
         margin: auto;
+    }
+
+    .homeWellness div article {
+        max-width: 273px;
+        min-height: 198px;
     }
 }
 
