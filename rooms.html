@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A&B Hôtel Restaurant</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/50737af3f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/roomsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <!-- HERDER -->
+        <!-- HEADER -->
         <div class="header">
             <img class="logo" src="assets/images/logo2.jpg" />
             <a id="navButton" href="javascript:void(0);" class="nav-resp">
                 <i class="fa-solid fa-bars"></i>
             </a>
-        </div><!-- END HEADER-->
+        </div>
+        <!-- END HEADER-->
 
         <!--NAVBAR-->
         <ul id="navHeader" class="displayNone">
@@ -36,7 +40,6 @@
         <div class="headRooms">
             <img class="logo-rooms" src="assets/images/logo2.jpg" alt="logo A&B">
             <h2>The Rooms</h2>
-            <button>v</button>
         </div>
 
         <div class="txtRooms">
@@ -67,27 +70,34 @@
         </div>
 
         <div class="roomsPages">
-            <div class="roomPictures"><img src="assets/images/room-azur1.jpg" alt="picture room azur"></div>
-            <div class="roomIndex">
-                <h2>Azur Room</h2>
-                <p>A minimalist and soothing decoration. Our Azur rooms offer you all the comfort you dream of.</p>
-                <button>Book</button>
+            <div class="roomsBand">
+                <div class="roomPictures"><img src="assets/images/room-azur1.jpg" alt="picture room azur"></div>
+                <div class="roomIndex">
+                    <h2>Azur Room</h2>
+                    <p>A minimalist and soothing decoration. Our Azur rooms offer you all the comfort you dream of.</p>
+                    <button>Book</button>
+                </div>
             </div>
 
-            <div class="roomPictures"><img src="assets/images/room-panorama1.jpg" alt="picture room panorama"></div>
-            <div class="roomIndex">
-                <h2>Panorama Room</h2>
-                <p>You will be amazed by the view offered by our Panorama rooms. Ideal for gazing at the city lights.
-                </p>
-                <button>Book</button>
+            <div class="roomsBand">
+                <div class="roomPictures"><img src="assets/images/room-panorama1.jpg" alt="picture room panorama"></div>
+                <div class="roomIndex">
+                    <h2>Panorama Room</h2>
+                    <p>You will be amazed by the view offered by our Panorama rooms. Ideal for gazing at the city
+                        lights.
+                    </p>
+                    <button>Book</button>
+                </div>
             </div>
 
-            <div class="roomPictures"><img src="assets/images/room-retro1.jpg" alt="picture room retro"></div>
-            <div class="roomIndex">
-                <h2>Retro Room</h2>
-                <p>Our Retro rooms bring you tranquility and space, all with a touch of old-fashioned charm.
-                </p>
-                <button>Book</button>
+            <div class="roomsBand">
+                <div class="roomPictures"><img src="assets/images/room-retro1.jpg" alt="picture room retro"></div>
+                <div class="roomIndex">
+                    <h2>Retro Room</h2>
+                    <p>Our Retro rooms bring you tranquility and space, all with a touch of old-fashioned charm.
+                    </p>
+                    <button>Book</button>
+                </div>
             </div>
         </div>
 
@@ -97,13 +107,44 @@
         </div>
 
         <div class="breakfastOffer">
-            <div class="breakfast"><button>In Room</button></div>
-            <div class="breakfast"><button>Buffet</button></div>
-            <div class="breakfast"><button>To take away</button></div>
+            <div class="breakfastRoom">
+                <button>In Room</button>
+            </div>
+            <div class="breakfastBuffet">
+                <button>Buffet</button>
+            </div>
+            <div class="breakfastAway">
+                <button>To take away</button>
+            </div>
         </div>
 
     </section>
     <!-- END ROOMS-->
+
+    <!--FOOTER-->
+    <footer>
+        <img src="assets/images/logo-w.png" alt="Logo A&B" />
+
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Rooms</li>
+                <li>Restaurant</li>
+                <li>Wellness</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <p>A&B the Amazing Hotel !</p>
+        <div class="icon_social">
+            <ul>
+                <li><img src="assets/images/facebook-icon.png" alt="icon facebook" /></li>
+                <li><img src="assets/images/instagram-icon.png" alt="icon Instagram" /></li>
+                <li><img src="assets/images/tripadvisor-icon.png" alt="icon tripadvisor" /></li>
+            </ul>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
     <script src="./assets/js/script.js"></script>
 </body>
 
