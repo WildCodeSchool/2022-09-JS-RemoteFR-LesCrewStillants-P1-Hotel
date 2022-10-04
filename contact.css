@@ -6,7 +6,7 @@
 .contact-section{
   background: linear-gradient(130deg, #EBE6E4,rgb(118, 111, 100));
   background-size: cover;
-  padding: 70px 0;
+  padding: 200px 0;
 }
 .contact-section h1{
   text-align: center;
@@ -16,7 +16,7 @@
 .formulaire{
   color: #bab08b;
   max-width: 500px;
-  line-height: 65px;
+  line-height: 100px;
   padding-left: 50px;
   font-size: 18px;
   justify-content: center;
@@ -26,7 +26,7 @@
   width: 200px;
   height: 6px;
   background: #bab08b;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .formulaire{
@@ -40,7 +40,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  margin: 16px 0;
+  margin: 50px 0;
   border: 0;
   background: rgb(206, 199, 199);
   padding: 20px 40px;
@@ -72,4 +72,11 @@ textarea.formulaire-text{
 }
 .formulaire-btn:hover{
   background: #726546;
+}
+#Ty{
+  text-align: center;
+  color: #726546;
+  justify-content: center;
+  padding: 70px 0;
+  font-size: 1.5rem;;
 }
