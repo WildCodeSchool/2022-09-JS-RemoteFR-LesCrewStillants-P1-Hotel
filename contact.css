@@ -6,14 +6,24 @@
 .contact-section{
   background: linear-gradient(130deg, #EBE6E4,rgb(118, 111, 100));
   background-size: cover;
-  padding: 40px 0;
+  padding: 70px 0;
 }
 .contact-section h1{
   text-align: center;
   color: #EBE6E4;
+  justify-content: center;
+}
+.formulaire{
+  color: #bab08b;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
 }
 .border{
-  width: 100px;
+  width: 200px;
   height: 6px;
   background: #bab08b;
   margin: 40px auto;
