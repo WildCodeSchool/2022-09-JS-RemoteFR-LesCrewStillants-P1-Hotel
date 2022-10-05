@@ -10,7 +10,7 @@
 }
 .contact-section h1{
   text-align: center;
-  color: #EBE6E4;
+  color: #403737;
   justify-content: center;
 }
 .formulaire{
@@ -23,7 +23,7 @@
   align-items: center;
 }
 .border{
-  width: 200px;
+  width: 300px;
   height: 6px;
   background: #bab08b;
   margin: 20px auto;
@@ -49,7 +49,7 @@
   transition: 0.5s;
   font-family: "montserrat";
   border-radius: 10px;
-  box-shadow: 0 0 5px 2px #aea192;
+  box-shadow: 0 0 5px 2px #403737;
 
 }
 .formulaire-text:focus{
@@ -75,7 +75,7 @@ textarea.formulaire-text{
 }
 #Ty{
   text-align: center;
-  color: #726546;
+  color: #403737;
   justify-content: center;
   padding: 70px 0;
   font-size: 1.5rem;;
