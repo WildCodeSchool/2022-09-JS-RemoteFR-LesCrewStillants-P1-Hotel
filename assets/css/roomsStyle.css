@@ -33,8 +33,6 @@ nav ul {
     margin: 0;
     display: none;
     padding: 0;
-
-
 }
 
 nav li {
@@ -338,11 +336,13 @@ footer .icon_social li img {
 
     .roomsBand {
         display: flex;
-        margin: 0 2rem 4rem 2rem;
+        justify-content: center;
+        margin: 4rem 0;
     }
 
     .roomPictures img {
-        width: 800px;
+        max-width: 800px;
+        max-height: 533.3px;
     }
 
     .roomIndex {
@@ -367,15 +367,22 @@ footer .icon_social li img {
 
     .breakfastOffer {
         display: flex;
+        justify-content: space-evenly;
         padding: 0 3rem 5rem 3rem;
     }
 
     .breakfastRoom {
         margin-right: 2rem;
+        min-height: 300px;
     }
 
     .breakfastBuffet {
         margin-right: 2rem;
+        min-height: 300px;
+    }
+
+    .breakfastAway {
+        min-height: 300px;
     }
 
     .breakfastOffer button {
