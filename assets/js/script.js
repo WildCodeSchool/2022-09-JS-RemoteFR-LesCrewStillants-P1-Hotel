@@ -12,17 +12,17 @@ navButton.addEventListener("click", function () {
 
 
 
-// MEDIA SCREEN > 600PX
+// MEDIA SCREEN > 778PX
 function redimensionnement() {
     var result = document.getElementById('result');
-    if ("matchMedia" in window) { // Détection
-
+    if ("matchMedia" in window) {
         if (window.matchMedia("(min-width:778px)").matches) {
             navHeader.style.display = "flex";
         } else {
             navHeader.style.display = "none";
         }
     }
+
 }
 
 window.addEventListener('resize', redimensionnement, false);

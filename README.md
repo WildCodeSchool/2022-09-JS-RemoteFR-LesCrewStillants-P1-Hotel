@@ -47,8 +47,3 @@ Début du projet : 29/09/2022
 * @Artmas-S
 * @Necrontyrs
 * @Alicia-Dupil
-<<<<<<< HEAD
-
-
-=======
->>>>>>> spa
