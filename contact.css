@@ -78,8 +78,9 @@ textarea.formulaire-text{
   color: #403737;
   justify-content: center;
   padding: 70px 0;
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
 }
+      
 footer {
   background-color: rgb(154, 154, 154);
   display: flex;
