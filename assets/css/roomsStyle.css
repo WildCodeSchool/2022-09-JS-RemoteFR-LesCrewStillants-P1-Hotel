@@ -336,7 +336,7 @@ footer .icon_social li img {
 
     .roomsBand {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 4rem 0;
     }
 
