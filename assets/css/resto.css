@@ -32,7 +32,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #403737;
     font-size: 24;
     font-family: "lustria";
 }
@@ -116,7 +116,8 @@ nav li:hover {
     z-index: 1;
 }
 
-.block1 p, button {
+.block1 p,
+button {
     max-width: 400px;
     margin-top: 30px;
 }
@@ -129,7 +130,8 @@ nav li:hover {
     margin: 20px;
 }
 
-.block2 p, button {
+.block2 p,
+button {
     max-width: 400px;
     margin-top: 30px;
 }
@@ -143,7 +145,8 @@ nav li:hover {
     width: 100%;
 }
 
-.block3 p, h2 {
+.block3 p,
+h2 {
     max-width: 400px;
     margin-top: 30px;
 }
@@ -208,15 +211,14 @@ footer .icon_social li img {
     .menu {
         display: none;
     }
-    
+
 }
 
 h2 {
     font-family: "lustria";
 }
 
-button, p {
+button,
+p {
     font-family: 'Montserrat', sans-serif;
 }
-
-
