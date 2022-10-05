@@ -16,7 +16,8 @@ navButton.addEventListener("click", function () {
 function redimensionnement() {
     var result = document.getElementById('result');
     if ("matchMedia" in window) { // Détection
-        if (window.matchMedia("(min-width:600px)").matches) {
+
+        if (window.matchMedia("(min-width:778px)").matches) {
             navHeader.style.display = "flex";
         } else {
             navHeader.style.display = "none";
