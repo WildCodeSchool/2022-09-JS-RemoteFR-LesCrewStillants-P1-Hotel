@@ -2,24 +2,16 @@ html,
 body {
     margin: 0;
     line-height: 1.5;
+    color: #403737;
 }
-
-
 
 /* GLOBAL */
-
-@font-face {
-    font-family: "lustria";
-    src: url("../fonts/lustria.ttf") format("ttf");
-}
-
-p {
-    font-size: 20px;
-}
-
 h2 {
     color: #DAB072;
+    font-family: "lustria";
+    line-height: 1;
 }
+
 
 button {
     font-size: 15px;
@@ -36,11 +28,13 @@ button {
     box-shadow: inset 0px 1px 0px 0px rgba(202, 202, 202, 0);
     text-shadow: inset 0px 1px 0px rgba(253, 249, 249, 1);
     background: linear-gradient(rgba(218, 176, 114, 1), rgba(144, 113, 69, 1));
+    font-family: 'montserrat', serif;
 }
 
 button:hover {
     background: linear-gradient(rgba(144, 113, 69, 1), rgba(218, 176, 114, 1));
 }
+
 
 /* HEADER */
 
@@ -49,11 +43,6 @@ button:hover {
     justify-content: space-between;
     padding: 0.5rem 2rem;
     align-items: center;
-
-}
-
-.header a {
-    color: #403737;
 }
 
 .logo {
@@ -62,20 +51,17 @@ button:hover {
 
 
 /* NAVBAR */
-
 nav {
     background-color: #EBE6E4;
     position: fixed;
     width: -webkit-fill-available;
-
+    z-index: 6;
 }
 
 nav ul {
     margin: 0;
     display: none;
     padding: 0;
-
-
 }
 
 nav li {
@@ -98,19 +84,13 @@ nav li a {
     color: #403737;
     display: block;
     text-decoration: none;
+    font-size: 1.3em;
 
 
 }
 
-.current-link {
-    color: red;
-}
 
-/* HOME */
-.home h2 {
-    color: #DAB072;
-}
-
+/* HOME GLOABL */
 .content {
     margin: 0 12vw;
     /* border: 1px green solid; */
@@ -121,44 +101,26 @@ nav li a {
     width: clamp(10rem, 30vw, 25rem);
 }
 
-.home {
-    /* border: 1px red solid; */
-    min-height: 200px;
-    padding: 10rem 0rem;
 
+.home h2 {
+    color: #DAB072;
+    margin: 0;
+    line-height: 0;
 }
 
-.home-presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.homePresentation-picto {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin: 50px auto;
-
-}
-
-.homePresentation-description {
-    background-color: #EBE6E4;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    padding: 3rem;
-    z-index: -1;
-    position: relative;
-    text-align: center;
+.home h3 {
+    margin-bottom: 2vw;
+    line-height: 1;
+    color: #646464;
 }
 
 
 
-
-/*############# LAST ############### */
-
+/* SECTION HERO */
 #homeHero {
     width: 100%;
-    min-height: 830px;
+    min-height: 101vh;
     background-image: url(../images/hero-bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -178,87 +140,220 @@ nav li a {
     width: 70vw;
 }
 
-.homeRestaurant {
+.home {
+    min-height: 200px;
+    padding-top: 10vw;
 
-    margin: 0 10vw;
-    padding: 5vw;
+}
+
+
+
+/* HOME PRESENTATION */
+.home-presentation {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+}
+
+.homePresentation-picto {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 50px auto;
 
 }
 
-.homeRestaurant img {
-    width: 75%;
-    height: fit-content;
-    margin: 2rem;
+.homePresentation-description {
+    background-color: #EBE6E4;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    padding: 1rem 80px;
+    z-index: -1;
+    position: relative;
+    text-align: center;
 }
 
-#homePresentation {
+.homePresentation-description h2 {
+    line-height: 1.5;
+}
 
-    background-image: url('../images/bg-home.jpg');
+
+/* SECTION SPACIOUS BEDROOM */
+.home-room {
+    background-image: url('../images/home-bedroom.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    height: 500px;
 }
 
-#homePresentation article {
-    width: 90%;
-    margin: auto;
-}
-
-#homePresentation p {
-    padding: 4rem;
-    font-style: italic;
-}
-
-.author {
-    display: block;
-    text-align: right;
-    font-weight: bold;
-}
-
-.homeWellness {
-
-    padding: 3vw 15vw;
+.home-bath {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+
+
+}
+
+.homeBath1 {
+    width: clamp(10rem, 35vw, 48rem);
+    margin-top: clamp(-10rem, -15vh, -8rem);
+    height: fit-content;
+    position: relative;
+    z-index: 5;
+}
+
+.homeBath3 {
+    width: clamp(5rem, 20vw, 26rem);
+    height: fit-content;
+    margin-bottom: -1vw;
+}
+
+.home-bath-content {
+    margin-top: -3vw;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    background-color: #f1f1f1;
 }
 
-.homeWellness div {
+.home-bath-description {
+    background-color: #EBE6E4;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    padding: 1rem 80px;
+    z-index: -1;
+    position: relative;
+    text-align: center;
+}
+
+.room-pictures {
     display: flex;
-    width: -webkit-fill-available;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.homeWellness div article {
-    width: 100%;
-    margin: 6px;
-    flex-shrink: 0;
-    max-width: 300px;
-    min-height: 200px;
-    display: flex;
-    align-items: flex-end;
+.home-room-pictures {
+    background-color: rgba(235, 230, 228, 0.41);
+    padding: 2vw 0;
 }
 
-.homeWellness div article {
-    background-image: url('../images/home-weelness1.jpg');
+.home-room-picture {
+    width: 30vw;
+    margin: 1vw;
+}
+
+
+/* SECTION RELAXING ENVIRONEMENT */
+.home-environement {
+    background-image: url('../images/beach.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
-.homeWellness div article h4 {
-    background-color: #00000061;
-    margin: 0;
-    width: -webkit-fill-available;
-    padding: 0.3rem;
-    color: #fff;
+.environement-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 0;
 }
+
+.home-environement-description {
+    background-color: #EBE6E4;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    padding: 1rem 80px;
+    text-align: center;
+}
+
+.environement-content img {
+    width: clamp(6rem, 67vw, 14rem);
+    margin-bottom: -0.5vw;
+    position: relative;
+}
+
+
+/* SECTION ALSO OFFERS */
+.home-other-services {
+    display: flex;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-services {
+    margin: 2vw;
+    width: clamp(10rem, 21vw, 39rem);
+}
+
+
+.home-other-services span {
+    color: #686868;
+    font-size: 0.5em;
+}
+
+.home-other-services img {
+    width: -webkit-fill-available;
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: rgb(154, 154, 154);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+footer img {
+    height: 50%;
+    width: 50%;
+}
+
+footer .menu ul {
+    margin: 0;
+    padding: 12px;
+}
+
+footer .menu li {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Lustria', serif;
+    font-size: 12px;
+    padding: 6px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    padding: 12px;
+    margin: 0;
+}
+
+footer .icon_social ul {
+    display: flex;
+    margin: 0;
+    padding: 12px;
+}
+
+footer .icon_social li {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer .icon_social li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 6px;
+}
+
+/*END FOOTER*/
+
 
 /* MEDIA SCREEN > 778px */
 
@@ -293,7 +388,46 @@ nav li a {
         flex-direction: row;
     }
 
+    .homePresentation-description {
+        margin-left: -50px;
+    }
 
+    .home-room {
+        background-image: url('../images/home-bedroom.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .home-bath {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+
+    }
+
+    .homeBath1 {
+        width: clamp(19rem, 24vw, 25rem);
+        margin-top: -200px;
+        height: fit-content;
+    }
+
+    .homeBath3 {
+        width: clamp(5rem, 20vw, 19rem);
+        height: fit-content;
+        margin-top: 2rem;
+        margin-left: -1rem;
+
+    }
+
+    .home-bath-content {
+        display: flex;
+        margin-top: -0.5vw;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
 
     .imgHero {
@@ -317,10 +451,90 @@ nav li a {
         max-width: 273px;
         min-height: 198px;
     }
+
+    .room-pictures {
+        justify-content: space-between;
+
+    }
+
+    .home-room-picture {
+        width: 16vw;
+        margin: 1vw;
+    }
+
+
+    .home-environement {
+        background-image: url('../images/beach.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .environement-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5vw 0;
+    }
+
+    .environement-content img {
+        width: clamp(6rem, 19vw, 32rem);
+        margin-right: -0.5vw;
+    }
+
+
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer img {
+        height: 20%;
+        width: 20%;
+    }
+
+    footer .menu li {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    footer .icon_social li img {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 @media screen AND (min-width: 940px) {
     #homePresentation p {
         width: 75ch;
+    }
+}
+
+@media screen AND (min-width: 1300px) {
+    .home-bath {
+        flex-direction: row;
+    }
+
+    .homeBath3 {
+        margin-left: -2vw;
+        margin-right: 0;
+        width: clamp(3rem, 9vw, 23rem);
+        height: fit-content;
+    }
+
+    .homeBath1 {
+        width: clamp(15rem, 17vw, 25rem);
+        margin-left: -70px;
+        margin-top: -8vw;
+    }
+
+    .home-bath-content {
+        align-items: flex-start;
+        margin-top: 5vw;
     }
 }
