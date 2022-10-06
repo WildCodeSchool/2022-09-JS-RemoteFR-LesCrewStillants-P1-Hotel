@@ -102,6 +102,16 @@ h2 {
 
 h2 {
     font-family: "lustria";
+    color: #DAB072;
+    text-align: center;
+
+}
+
+.sub-title {
+    color: #646464;
+    font-size: 0.7em;
+    margin-bottom: 3vw;
+    display: block;
 }
 
 button,
