@@ -14,7 +14,7 @@ body {
 
 
 
-.menu {
+.menu-right {
     display: flex;
     text-align: center;
     background-color: #CDCCCC;
@@ -26,7 +26,7 @@ body {
     right: 0;
 }
 
-.menu p {
+.menu-right p {
     margin: 5px;
 
 }
@@ -94,7 +94,7 @@ h2 {
 
 
 @media screen and (max-width:720px) {
-    .menu {
+    .menu-right {
         display: none;
     }
 

@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.header a {
+    color: #403737;
+}
+
 .logo {
     width: 5rem;
 }
@@ -103,6 +107,11 @@ footer .icon_social ul {
 footer .icon_social li {
     list-style-type: none;
     margin: 0;
+}
+
+footer li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 footer .icon_social li img {
