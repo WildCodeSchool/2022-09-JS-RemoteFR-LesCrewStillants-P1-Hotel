@@ -1,94 +1,18 @@
+@import "commun.css";
+
 html,
 body {
     margin: 0;
 }
 
 
-/* HEADER */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    align-items: center;
-
-}
-
-.header a {
-    color: #403737;
-}
-
-.logo {
-    width: 5rem;
-}
-
-
-/* NAVBAR */
-
-nav {
-    background-color: #EBE6E4;
-
-}
-
-a {
-    text-decoration: none;
-    color: #403737;
-    font-size: 24;
-    font-family: "lustria";
-}
-
-nav ul {
-    margin: 0;
-    display: none;
-    padding: 0;
-
-
-}
-
-nav li {
-    list-style-type: none;
-    text-align: center;
-    padding: 0.5rem;
-    border-top: 1px #fdfdfd solid;
-    background-color: #d3cac7;
-    color: #403737;
-    cursor: pointer;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    font-family: "lustria";
-}
-
-nav li:hover {
-    background-color: #bdb2af;
-}
 
 
 
-/* MEDIA SCREEN > 600px */
 
-@media screen AND (min-width: 600px) {
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    nav ul {
-        display: flex;
-        padding: 0rem 3rem;
-    }
 
-    nav li {
-        background-color: transparent;
-        border: 0;
-        padding: 0rem 0.8rem;
-    }
-
-    #navButton {
-        display: none;
-    }
-}
 
 .menu {
     display: flex;
@@ -167,45 +91,7 @@ h2 {
     max-width: 400px;
 }
 
-footer {
-    background-color: rgb(154, 154, 154);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-footer img {
-    max-width: 150px;
-    max-height: 150px;
-    height: 50%;
-    width: 50%;
-}
-
-
-footer p {
-    color: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    padding: 12px;
-    margin: 0;
-}
-
-footer .icon_social ul {
-    display: flex;
-    margin: 0;
-    padding: 12px;
-}
-
-footer .icon_social li {
-    list-style-type: none;
-    margin: 0;
-}
-
-footer .icon_social li img {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 6px;
-}
 
 @media screen and (max-width:720px) {
     .menu {
