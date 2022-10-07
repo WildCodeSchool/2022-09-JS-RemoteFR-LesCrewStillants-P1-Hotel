@@ -44,6 +44,6 @@ Début du projet : 29/09/2022
 # Team
 * @ryantheap
 * @NicolasBIANIC
-* @Artmas-S
+* @Artman-S
 * @Necrontyrs
 * @Alicia-Dupil
