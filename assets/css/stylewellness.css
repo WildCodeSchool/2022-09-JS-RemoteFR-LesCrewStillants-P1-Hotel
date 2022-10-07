@@ -1,0 +1,97 @@
+@import "commun.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+
+
+
+/*Wellness*/
+
+section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.massage {
+    background-color: #EBE6E4;
+}
+
+.hottubs {
+    background-color: #f5f5f5;
+}
+
+.sauna {
+    background-color: #EBE6E4;
+}
+
+.pool {
+    background-color: #f5f5f5;
+}
+
+main img {
+    width: 355px;
+    grid-column: 1 / 2;
+    margin: 1rem;
+    box-shadow: 7px 7px 6px 0px rgba(203, 196, 201, 1);
+}
+
+h2 {
+    text-align: center;
+    margin: .8rem;
+    color: #DAB072;
+    font-family: "lustria";
+}
+
+article {
+    margin-bottom: 2rem;
+    max-width: 65ch;
+    text-align: center;
+    font-family: "montserrat";
+    grid-row: 2 / 3;
+}
+
+
+
+
+/* MEDIA SCREEN > 778px */
+
+@media screen AND (min-width: 778px) {
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    div {
+        padding: 5rem;
+
+    }
+
+    h2 {
+        font-size: 3rem;
+
+    }
+
+    article {
+        font-size: 1.5rem;
+    }
+
+    img {
+        margin: 0rem;
+        width: 700px;
+    }
+}

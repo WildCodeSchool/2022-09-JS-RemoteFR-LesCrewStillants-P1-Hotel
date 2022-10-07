@@ -1,0 +1,120 @@
+@import "commun.css";
+
+html,
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.menu-right {
+    display: flex;
+    text-align: center;
+    background-color: #CDCCCC;
+    float: right;
+    width: 150px;
+    min-height: 100vh;
+    flex-direction: column;
+    z-index: 99;
+    right: 0;
+}
+
+.menu-right p {
+    margin: 5px;
+
+}
+
+.block1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    z-index: 1;
+}
+
+.block1 p,
+button {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.block2 p,
+button {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.block3 {
+    background-color: #EBE6E4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.block3 p,
+h2 {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.block1 img {
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    max-height: 300px;
+    max-width: 400px;
+}
+
+.block2 img {
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+    max-height: 300px;
+    max-width: 400px;
+}
+
+
+
+@media screen and (max-width:720px) {
+    .menu-right {
+        display: none;
+    }
+
+}
+
+h2 {
+    font-family: "lustria";
+    color: #DAB072;
+    text-align: center;
+
+}
+
+.sub-title {
+    color: #646464;
+    font-size: 0.7em;
+    margin-bottom: 3vw;
+    display: block;
+}
+
+button,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
